@@ -27,3 +27,7 @@ GIT_PS1_SHOWUPSTREAM="auto git"
 
 # Load NVM
 . ~/.nvm/nvm.sh
+
+#
+alias 2015='cd ~/dev/plus/2015/'
+alias plus='cd ~/dev/plus/'

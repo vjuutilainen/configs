@@ -1,0 +1,11 @@
+[user]
+	name = Ville Juutilainen
+	email = vjuutilainen@gmail.com
+[color]
+	ui = auto
+[credential]
+	helper = osxkeychain
+[core]
+	excludesfile = /Users/villejuutilainen/.gitignore_global
+[push]
+	default = simple

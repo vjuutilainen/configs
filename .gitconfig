@@ -6,6 +6,6 @@
 [credential]
 	helper = osxkeychain
 [core]
-	excludesfile = /Users/villejuutilainen/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [push]
 	default = simple

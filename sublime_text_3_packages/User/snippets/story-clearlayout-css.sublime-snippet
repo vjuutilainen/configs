@@ -1,0 +1,40 @@
+<snippet>
+	<content><![CDATA[
+/* Clear layout */
+
+header, #footer, .article .content > footer, #ylefifooter {
+  display: none !important;
+}
+
+.ie6 header, .ie6 #footer, .ie6 .article .content > footer, .ie6 #ylefifooter {
+  display: block !important;
+}
+
+.ie7 header, .ie7 #footer, .ie7 .article .content > footer, .ie7 #ylefifooter {
+  display: block !important;
+}
+
+.ie8 header, .ie8 #footer, .ie8 .article .content > footer, .ie8 #ylefifooter {
+  display: block !important;
+}
+
+.article.wide #container {
+  margin-bottom: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+#container, .article.wide #container>.content {
+  max-width: none;
+  width: 100%;
+}
+
+.permanent {
+  display: none !important;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>story-clearlayout</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.css,source.sass</scope>
+</snippet>

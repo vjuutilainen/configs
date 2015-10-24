@@ -1,0 +1,28 @@
+<snippet>
+	<content><![CDATA[
+/* Share container */
+
+.story-share-container {
+  margin: 20px auto;
+  max-width: 580px;
+  width: 94%;
+  text-align: center;
+}
+
+.story-share-container .share .fa-yle-some {
+  font-size: 60px;
+  margin: 10px 0 20px 0;
+  width: 80px;
+  color: #00aabd;
+}
+
+.story-share-container .share .fa-yle-some:hover {
+  color: #333;
+}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>story-share-container</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.css, source.sass</scope>
+</snippet>

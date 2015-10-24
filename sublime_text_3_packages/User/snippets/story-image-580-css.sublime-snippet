@@ -1,0 +1,35 @@
+<snippet>
+	<content><![CDATA[
+/* 580 image */
+
+.story-image-580 {
+	margin-bottom: 20px;
+}
+
+.story-image-580 img {
+	width: 94%;
+  max-width: 580px;
+  margin: auto;
+}
+
+.caption-container {
+  max-width: 560px;
+  margin: 10px auto 30px auto;
+  background: #f1f1f1;
+  padding: 10px;
+}
+
+.caption-container .caption {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.caption-container .source {
+  font-size: 11px;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>story-image-580</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.css, source.sass</scope>
+</snippet>

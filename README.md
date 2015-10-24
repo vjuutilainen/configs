@@ -1,5 +1,3 @@
 # Configs
 
-System configuration files.
-
-## Sublime Text
+System configuration files and Sublime Text 3 basic settings.

@@ -1,0 +1,80 @@
+<snippet>
+	<content><![CDATA[
+var Map = function() {
+
+  var _this = this;
+
+  var options = {
+    shapepath: path+'data/shapes_topo.json',
+    image: 'staticmap.png',
+    container: '#esi-vis .story-map',
+    scale: 200,
+    center: [0,0]
+  };
+
+  this.addStatic = function() {
+    \$('<img src="'+path+'img/'+options.image+'" data-src="'+options.image+'">').appendTo(options.container);
+  };
+
+  this.updateDimensions = function() {
+    this.outerWidth = this.container[0][0].offsetWidth;
+    this.outerHeight = this.container[0][0].offsetHeight;
+    this.padding = {top: 0, right: 0, bottom: 0, left: 0};
+    this.width = this.outerWidth - this.padding.left - this.padding.right;
+    this.height = this.outerHeight - this.padding.top - this.padding.bottom;
+  };
+
+  this.updateSvg = function() {
+    var _this = this;
+    this.svg.attr({
+      'width': _this.outerWidth+'px',
+      'height': _this.outerHeight+'px'
+    });
+  };
+
+  this.addShapes = function() {
+    this.shapes = this.svg.selectAll(".shape")
+        .data(topojson.feature(this.shapedata, this.shapedata.objects.countries).features)
+        .enter()
+        .append("path")
+        .attr("class","shape");
+  };
+
+  this.updateShapes = function() {
+    this.projection = d3.geo.mercator().center(this.projectionCenter).scale(this.projectionScale).translate([this.width/2, this.height/2]);
+    this.pathTransform = d3.geo.path().projection(this.projection);
+    this.shapes.attr("d",this.pathTransform);
+  };
+
+  this.init = function(data) {
+    this.shapedata = data;
+    this.container = d3.select(options.container);
+    this.svg = this.container.append('svg');
+    this.projectionScale = options.scale ? options.scale : 200;
+    this.projectionCenter = options.center ? options.center : [0,0];              
+  };
+
+  this.update = function() {
+    this.updateDimensions();
+    this.updateSvg();
+    this.updateShapes();
+  };
+
+  d3.json(options.shapepath,function(data) {
+    if(data !== null) {
+      _this.init(data);
+      _this.addShapes();
+      _this.update();
+    }
+    else {
+      _this.addStatic();
+    }
+  });
+
+};
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>story-map</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>

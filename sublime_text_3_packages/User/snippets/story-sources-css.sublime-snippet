@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+/* Intro */
+
+#esi-vis .story-sources {
+  margin: auto;
+  max-width: 580px;
+  width: 94%;
+}
+
+#esi-vis .story-sources p {
+  font-size: 12px;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>story-sources</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.css</scope>
+</snippet>

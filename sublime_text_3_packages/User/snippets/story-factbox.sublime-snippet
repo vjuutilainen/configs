@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+<div class="facts">
+  <h3>${1:Title}</h3>
+  <ul>
+    <li>${2:Point}</li>
+    <li>${3:Point}</li>
+    <li>${4:Point}</li>
+  </ul>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>story-factbox</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>text.html</scope>
+</snippet>

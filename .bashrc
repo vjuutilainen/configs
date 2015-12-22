@@ -7,16 +7,19 @@ LSCOLORS=exfxcxdxbxegedabagacad
 export LSCOLORS
 export CLICOLOR=1
 
-# Custom bins (user and Homebrew) to PATH
-export PATH=~/bin:/usr/local/bin:$PATH
+# Custom bins (user, Homebrew, NPM) to PATH
+export PATH=~/bin:/usr/local/bin:$HOME/.node/bin:$PATH
 
 # Make Sublime the default editor
 export EDITOR='subl -w'
 
-# Bash completion
+# Bash completion for Homebrew
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 	. $(brew --prefix)/etc/bash_completion
 fi
+
+# Basch completion for NPM
+source ~/.node/lib/node_modules/npm/lib/utils/completion.sh
 
 # Interaction prompt environment variables for git
 GIT_PS1_SHOWDIRTYSTATE=true
@@ -28,4 +31,5 @@ GIT_PS1_SHOWUPSTREAM="auto git"
 
 # Custom aliases
 alias 2015='cd ~/dev/plus/2015/'
+alias 2015='cd ~/dev/plus/2016/'
 alias plus='cd ~/dev/plus/'

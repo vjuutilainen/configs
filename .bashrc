@@ -30,6 +30,7 @@ GIT_PS1_DESCRIBE_STYLE="branch"
 GIT_PS1_SHOWUPSTREAM="auto git"
 
 # Custom aliases
+alias 2014='cd ~/dev/plus/2014/'
 alias 2015='cd ~/dev/plus/2015/'
 alias 2016='cd ~/dev/plus/2016/'
 alias plus='cd ~/dev/plus/'

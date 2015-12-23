@@ -2,34 +2,25 @@
 	<content><![CDATA[
 /* Clear layout */
 
-header, #footer, .article .content > footer, #ylefifooter {
+.article #container {
+  margin-bottom: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+.article #container .content {
+  margin-bottom: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+.article #container .permanent {
   display: none !important;
 }
-
-.ie6 header, .ie6 #footer, .ie6 .article .content > footer, .ie6 #ylefifooter {
-  display: block !important;
-}
-
-.ie7 header, .ie7 #footer, .ie7 .article .content > footer, .ie7 #ylefifooter {
-  display: block !important;
-}
-
-.ie8 header, .ie8 #footer, .ie8 .article .content > footer, .ie8 #ylefifooter {
-  display: block !important;
-}
-
-.article.wide #container {
+.article .content>.text figure {
   margin-bottom: 0;
-  max-width: 100%;
-  width: 100%;
 }
-
-#container, .article.wide #container>.content {
-  max-width: none;
-  width: 100%;
-}
-
-.permanent {
+#ylefifooter,
+#footer,
+#header {
   display: none !important;
 }
 ]]></content>

@@ -7,5 +7,6 @@
 	helper = osxkeychain
 [core]
 	excludesfile = ~/.gitignore_global
+  precomposeunicode = false
 [push]
 	default = simple

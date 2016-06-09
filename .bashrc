@@ -7,6 +7,12 @@ LSCOLORS=exfxcxdxbxegedabagacad
 export LSCOLORS
 export CLICOLOR=1
 
+# Postgres.app
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+
+# Yle AWS
+export PATH=$PATH:~/yle-aws-tools/bin
+
 # Custom bins (user, Homebrew, NPM) to PATH
 export PATH=~/bin:/usr/local/bin:$HOME/.node/bin:$PATH
 
@@ -34,3 +40,5 @@ alias 2014='cd ~/dev/plus/2014/'
 alias 2015='cd ~/dev/plus/2015/'
 alias 2016='cd ~/dev/plus/2016/'
 alias plus='cd ~/dev/plus/'
+# added by travis gem
+[ -f /Users/villejuutilainen/.travis/travis.sh ] && source /Users/villejuutilainen/.travis/travis.sh

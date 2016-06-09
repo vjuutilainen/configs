@@ -23,9 +23,13 @@
         "node": true,
         "browser": true
     },
-    "ecmaFeatures": {
-        "jsx": true,
-        "modules": true
+    parserOptions: {
+        "ecmaVersion": 6,
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true
+        },
+        "sourceType": "module"
     },
     "globals": {
         "$": true,

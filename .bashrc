@@ -11,10 +11,10 @@ export CLICOLOR=1
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
 # Yle AWS
-export PATH=$PATH:~/yle-aws-tools/bin
+export PATH=$PATH:~/dev/yle-aws-tools/bin
 
 # Custom bins (user, Homebrew, NPM) to PATH
-export PATH=~/bin:/usr/local/bin:$HOME/.node/bin:$PATH
+export PATH=~/dev/bin:/usr/local/bin:$HOME/.node/bin:$PATH
 
 # Make Sublime the default editor
 export EDITOR='subl -w'

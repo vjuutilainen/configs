@@ -36,9 +36,9 @@ GIT_PS1_DESCRIBE_STYLE="branch"
 GIT_PS1_SHOWUPSTREAM="auto git"
 
 # Custom aliases
-alias 2014='cd ~/dev/plus/2014/'
-alias 2015='cd ~/dev/plus/2015/'
-alias 2016='cd ~/dev/plus/2016/'
-alias plus='cd ~/dev/plus/'
+alias 2014='cd ~/dev/yle-plus-projects/2014/'
+alias 2015='cd ~/dev/yle-plus-projects/2015/'
+alias 2016='cd ~/dev/yle-plus-projects/2016/'
+
 # added by travis gem
 [ -f /Users/villejuutilainen/.travis/travis.sh ] && source /Users/villejuutilainen/.travis/travis.sh

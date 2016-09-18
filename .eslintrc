@@ -32,7 +32,5 @@
         "sourceType": "module"
     },
     "globals": {
-        "$": true,
-        "d3": true
     }
 }

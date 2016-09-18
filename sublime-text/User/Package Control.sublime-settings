@@ -1,0 +1,22 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Babel",
+		"Insert Nums",
+		"Julia",
+		"Markdown Extended",
+		"Markdown Preview",
+		"Monokai Extended",
+		"Package Control",
+		"Pretty JSON",
+		"R-Box",
+		"Sass",
+		"SendTextPlus",
+		"SublimeLinter",
+		"SublimeLinter-contrib-eslint"
+	]
+}

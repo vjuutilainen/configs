@@ -10,7 +10,9 @@ class ${1:MyComponent} extends React.Component {
   }
 
   render() {
-    return <div className=""></div>
+    return (
+      <div className=""></div>
+    );
   }
 
 }

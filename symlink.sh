@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Create symlinks inside user folder if they don't exist yet:"
 directory=${PWD}
 ln -shv $directory/.Rprofile ~/.Rprofile

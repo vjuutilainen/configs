@@ -39,6 +39,7 @@ GIT_PS1_SHOWUPSTREAM="auto git"
 alias 2014='cd ~/dev/yle-plus-projects/2014/'
 alias 2015='cd ~/dev/yle-plus-projects/2015/'
 alias 2016='cd ~/dev/yle-plus-projects/2016/'
+alias r='r --no-save'
 
 # added by travis gem
 [ -f /Users/villejuutilainen/.travis/travis.sh ] && source /Users/villejuutilainen/.travis/travis.sh

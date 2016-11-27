@@ -9,4 +9,5 @@ ln -shv $directory/.eslintrc ~/.eslintrc
 ln -shv $directory/.gitconfig ~/.gitconfig
 ln -shv $directory/.gitignore_global ~/.gitignore_global
 ln -shv $directory/.npmrc ~/.npmrc
+ln -shv $directory/.pandoc ~/.pandoc
 echo "Done."

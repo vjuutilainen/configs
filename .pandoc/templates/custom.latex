@@ -2,6 +2,18 @@
 $if(beamerarticle)$
 \usepackage{beamerarticle} % needs to be loaded first
 $endif$
+
+%custom additions begin
+
+% disable page numbering
+\pagestyle{empty}
+
+% align all subtitles left 
+\usepackage[raggedright]{titlesec}
+
+%custom additions end
+
+
 $if(fontfamily)$
 \usepackage[$for(fontfamilyoptions)$$fontfamilyoptions$$sep$,$endfor$]{$fontfamily$}
 $else$
@@ -248,7 +260,6 @@ $if(lof)$
 \listoffigures
 $endif$
 $body$
-
 $if(natbib)$
 $if(bibliography)$
 $if(biblio-title)$

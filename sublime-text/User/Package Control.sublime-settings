@@ -17,6 +17,7 @@
 		"Sass",
 		"SendREPL",
 		"SublimeLinter",
-		"SublimeLinter-contrib-eslint"
+		"SublimeLinter-contrib-eslint",
+		"SublimeLinter-pep8"
 	]
 }

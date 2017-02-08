@@ -16,6 +16,9 @@ export PATH=$PATH:~/dev/yle-aws-tools/bin
 # Custom bins (user, Homebrew, NPM) to PATH
 export PATH=~/dev/bin:/usr/local/bin:$HOME/.node/bin:$PATH
 
+# PKG path
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
+
 # Make Sublime the default editor
 export EDITOR='subl -w'
 

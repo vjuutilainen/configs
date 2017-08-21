@@ -6,18 +6,22 @@
 	"installed_packages":
 	[
 		"Babel",
+		"CSS3",
 		"Insert Nums",
 		"Julia",
 		"Markdown Extended",
 		"Markdown Preview",
 		"Monokai Extended",
+		"Oceanic Next Color Scheme",
+		"OpenGL Shading Language (GLSL)",
 		"Package Control",
 		"Pretty JSON",
-		"R-Box",
 		"Sass",
-		"SendREPL",
+		"SendCode",
+		"SPARQL",
 		"SublimeLinter",
 		"SublimeLinter-contrib-eslint",
-		"SublimeLinter-pep8"
+		"SublimeLinter-pep8",
+		"WordCount"
 	]
 }

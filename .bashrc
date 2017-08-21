@@ -7,14 +7,27 @@ LSCOLORS=exfxcxdxbxegedabagacad
 export LSCOLORS
 export CLICOLOR=1
 
-# Postgres.app
+# English locales
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+
+# Paths
+
+# Postgres
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
-# Yle AWS
+# AWS
 export PATH=$PATH:~/dev/yle-aws-tools/bin
 
-# Custom bins (user, Homebrew, NPM) to PATH
-export PATH=~/dev/bin:/usr/local/bin:$HOME/.node/bin:$PATH
+# Custom bin
+export PATH=$PATH:~/dev/bin
+
+# Homebrew
+export PATH=$PATH:/usr/local/bin
+
+# Homebrew Node binaries
+export PATH=$PATH:~/.node/bin
 
 # PKG path
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
@@ -28,7 +41,7 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 # Basch completion for NPM
-source ~/.node/lib/node_modules/npm/lib/utils/completion.sh
+# source ~/.node/lib/node_modules/npm/lib/utils/completion.sh
 
 # Interaction prompt environment variables for git
 GIT_PS1_SHOWDIRTYSTATE=true

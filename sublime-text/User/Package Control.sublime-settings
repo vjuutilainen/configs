@@ -7,20 +7,16 @@
 	[
 		"Babel",
 		"CSS3",
+		"Enhanced Clojure",
 		"Insert Nums",
 		"Julia",
-		"Markdown Extended",
-		"Markdown Preview",
-		"Monokai Extended",
-		"Oceanic Next Color Scheme",
 		"OpenGL Shading Language (GLSL)",
 		"Package Control",
 		"Pretty JSON",
-		"Sass",
 		"SendCode",
 		"SPARQL",
 		"SublimeLinter",
-		"SublimeLinter-contrib-eslint",
+		"SublimeLinter-eslint",
 		"SublimeLinter-pep8",
 		"WordCount"
 	]

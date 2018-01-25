@@ -14,23 +14,31 @@ export LC_ALL=en_US.UTF-8
 
 # Paths
 
+# Chruby
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
+chruby 2.4.2
+
 # Postgres
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
 # AWS
-export PATH=$PATH:~/dev/yle-aws-tools/bin
+export PATH=$PATH:$HOME/dev/yle-aws-tools/bin
 
 # Custom bin
-export PATH=$PATH:~/dev/bin
+export PATH=$PATH:$HOME/dev/bin
 
 # Homebrew
 export PATH=$PATH:/usr/local/bin
 
 # Homebrew Node binaries
-export PATH=$PATH:~/.node/bin
+export PATH=$PATH:$HOME/.node/bin
 
 # PKG path
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
+
+# Rust path
+export PATH=$PATH:$HOME/.cargo/bin
 
 # Make Sublime the default editor
 export EDITOR='subl -w'
@@ -54,8 +62,10 @@ GIT_PS1_SHOWUPSTREAM="auto git"
 # Custom aliases
 alias 2016='cd ~/dev/yle-plus-projects/2016/'
 alias 2017='cd ~/dev/yle-plus-projects/2017/'
+alias 2018='cd ~/dev/yle-plus-projects/2018/'
 alias r='r --no-save'
 alias data='cd ~/dev/data-analysis/'
+alias sclang='/Applications/SuperCollider.app/Contents/MacOS/sclang'
 
 # added by travis gem
 [ -f /Users/villejuutilainen/.travis/travis.sh ] && source /Users/villejuutilainen/.travis/travis.sh
